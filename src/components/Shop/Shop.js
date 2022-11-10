@@ -25,7 +25,6 @@ const Shop = () => {
 
     const pages = Math.ceil(count / size);
 
-
     const clearCart = () => {
         setCart([]);
         deleteShoppingCart();
@@ -62,7 +61,6 @@ const Shop = () => {
         setCart(newCart);
         addToDb(selectedProduct._id);
     }
-
     return (
         <div className='shop-container'>
             <div className="products-container">
@@ -102,5 +100,4 @@ const Shop = () => {
         </div>
     );
 };
-
 export default Shop;
